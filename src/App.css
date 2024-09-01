@@ -1,15 +1,38 @@
 :root {
   --navbar-bg-color: #e9ecef;
+  --body-bg-color: #ffffff;
+  --font-color: #ff0000;
+  --header-font-color: #000000;
+  --header-bg-color: #f8f9fa;
 }
 
 .navbar-custom {
-  background-color: var(--navbar-bg-color) !important;
+  background-color: var(--navbar-bg-color);
+  color: var(--font-color);
+}
+
+.navbar-custom .nav-link {
+  color: var(--font-color) !important;
+}
+
+.navbar-custom .navbar-brand {
+  color: var(--font-color) !important;
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   right: 0;
   left: auto;
   margin-top: var(--bs-dropdown-spacer);
+}
+
+.accordion-header-custom .accordion-button {
+  background-color: var(--header-bg-color) !important;
+  color: var(--header-font-color) !important;
+}
+
+.accordion-item-custom {
+  background-color: var(--body-bg-color) !important;
+  color: var(--font-color) !important;
 }
 .App {
   text-align: center;
