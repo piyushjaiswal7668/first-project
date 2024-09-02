@@ -28,10 +28,9 @@ function App() {
   }, [navTheme, bodyTheme, fontColor]);
 
   const showAlert = (message, type) => {
-    this.setState({alert:{
+    setAlert({
       message: message,
       type: type,
-    }
     });
     setTimeout(() => {
       setAlert(null);
